@@ -1,0 +1,19 @@
+---
+title: "Enrollment"
+author: "Sophie Webster"
+date: "2/11/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(readxl)
+enrollment <- read_excel("./class_enrollment_summary_by_term_2.11.20.xlsx")
+```
+
+```{r}
+glimpse(enrollment)
+as.numeric("Total")
+```
+
